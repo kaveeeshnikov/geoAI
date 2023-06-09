@@ -5,7 +5,7 @@ import os
 
 
 PANORAMAS_PATH = ""    # path to panoramas
-SAVE_GRIDS_PATH = ""   # the path to the folder where the grids will be saved
+SAVE_GRIDS_PATH = ""   # path to the folder where the grids will be saved
 
 # creates list of panoramas coordinates
 coordinates_list = [os.path.splitext(filename)[0] for filename in os.listdir(PANORAMAS_PATH)]
