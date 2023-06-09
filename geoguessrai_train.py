@@ -27,7 +27,7 @@ from sklearn.model_selection import train_test_split
 model_name = ""
 model = ResNetForImageClassification.from_pretrained("microsoft/resnet-50")
 processor = AutoImageProcessor.from_pretrained("microsoft/resnet-50")
-MODEL_SAVE_PATH = ""
+MODEL_SAVE_PATH = ""   # path to the folder where the model will be saved
 DATASET_PATH = ""      # path to final dataframe with grids
 PANORAMAS_PATH = ""    # path to panoramas
 BATCH_SIZE = 512
