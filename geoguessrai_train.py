@@ -156,7 +156,7 @@ for epoch in range(N_EPOCH):
         print(f"save best model at {best_loss} with epoch {best_epoch}")
         torch.save(model.state_dict(), f"{MODEL_SAVE_PATH}{model_name}.pt")
 
-    # early stop if the loss does not stop grow
+    # early stop if the test loss does not stop grow
     if epoch - 10 > best_epoch:
         print(
             f"early stop at {epoch+1} with best epoch {best_epoch} and test similarity {best_loss}."
