@@ -19,7 +19,7 @@ locations_gdf = gpd.GeoDataFrame(
     locations_df, geometry=gpd.points_from_xy(locations_df["lon"], locations_df["lat"])
 )
 
-# load earth map dataser from geopandas
+# load earth map dataset from geopandas
 world = gpd.read_file(gpd.datasets.get_path("naturalearth_lowres"))
 world = world[world["continent"] != "Antarctica"]
 
