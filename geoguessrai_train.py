@@ -12,7 +12,6 @@ import torch
 import torch.nn as nn
 from transformers import CLIPProcessor, CLIPModel
 import torch.nn.functional as F
-import torchvision.transforms as T
 import torchvision.models as models
 import torchvision
 from torchvision.datasets import ImageFolder
